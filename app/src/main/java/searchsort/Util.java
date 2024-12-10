@@ -50,11 +50,16 @@ public class Util {
         // Create a new integer array of size n
         int[] arr = new int[n];
 
+        // Fill the array with elements from 0 to n-1
+        for (int i = 0; i < n; i++) {
+            arr[i] = i;
+        }
+
         // Shuffle the array using the Shuffle method with the given seed
         shuffle(arr, seed);
 
         // Return the shuffled array
-        return new int[n];
+        return arr;
     }
 
     /**

@@ -1,5 +1,7 @@
 package searchsort;
 
+import java.util.Arrays;
+
 /**
  * Main class for manually testing your code.
  */
@@ -39,5 +41,39 @@ public class Main {
             System.out.print(arr5[i] + " ");
         }
 
+        System.out.println();
+
+        // Test SelectionSort.sort
+        int[] arr6 = { 2, 1, 5, 4, 3 };
+        SelectionSort.sort(arr6);
+        for (int i = 0; i < arr6.length; i++) {
+            System.out.print(arr6[i] + " ");
+        }
+
+        System.out.println();
+
+        // Test MergeSort.sort
+        int[] arr7 = { 2, 1, 5, 4, 3 };
+        MergeSort ms = new MergeSort();
+        ms.sort(arr7);
+        for (int i = 0; i < arr7.length; i++) {
+            System.out.print(arr7[i] + " ");
+        }
+
+        System.out.println();
+
+        // Test QuickSort.sort
+        int[] arr8 = { 2, 1, 5, 4, 3 };
+        QuickSort qs = new QuickSort();
+        qs.sort(arr8);
+        for (int i = 0; i < arr8.length; i++) {
+            System.out.print(arr8[i] + " ");
+        }
+
+        // Test generateRandomArray
+        int[] arr9 = Util.generateRandomArray(5, 12345L);
+        for (int i = 0; i < arr9.length; i++) {
+            System.out.print(arr9[i] + " ");
+        }
     }
 }
